@@ -1,0 +1,152 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "register from main page",
+      "uid" : "8a83f2bc54d69e1f",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556050600,
+        "stop" : 1625556064688,
+        "duration" : 14088
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "register footer button ",
+      "uid" : "98583a456730c1e6",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556064689,
+        "stop" : 1625556077367,
+        "duration" : 12678
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Sign In with correct credentials ",
+      "uid" : "255c857ddf74b463",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556077368,
+        "stop" : 1625556082188,
+        "duration" : 4820
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Reset your password with invalid email",
+      "uid" : "ee93f6e7bcd4cb27",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556082188,
+        "stop" : 1625556084965,
+        "duration" : 2777
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Mouse hover to buttons and isDisplayed verification",
+      "uid" : "20c099c710e84e5e",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556084965,
+        "stop" : 1625556088756,
+        "duration" : 3791
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Registraion with join for free button ",
+      "uid" : "988179403643c798",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556088756,
+        "stop" : 1625556097339,
+        "duration" : 8583
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Exlpore GitHub and check is \"topics\" displayed ",
+      "uid" : "9e864d9a09b15fff",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556097339,
+        "stop" : 1625556106914,
+        "duration" : 9575
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Exlpore GitHub for webdriverio  ",
+      "uid" : "c451e0dd4eef88d2",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556106914,
+        "stop" : 1625556115217,
+        "duration" : 8303
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Regiser account with github enterprise cloud ",
+      "uid" : "6f59a2b022dbcb",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556115217,
+        "stop" : 1625556122904,
+        "duration" : 7687
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "Regiser account with github enterprise server  ",
+      "uid" : "e1595d5c3a80c23a",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556122904,
+        "stop" : 1625556130780,
+        "duration" : 7876
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    }, {
+      "name" : "output carers labels in console ",
+      "uid" : "654898e7077036a6",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625556130781,
+        "stop" : 1625556138188,
+        "duration" : 7407
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.124" ]
+    } ],
+    "uid" : "d662795e8d349f9b5595bf62f43ea7ae"
+  } ]
+}
