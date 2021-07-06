@@ -1,3 +1,5 @@
+
+
 exports.config = {
     //
     // ====================
@@ -52,6 +54,10 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
+
+    hostname: "localhost",
+    port: 4444,
+    path: "/wd/hub",    
     capabilities: [{
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
@@ -59,7 +65,7 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'chrome',
+        browserName: "chrome",
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
