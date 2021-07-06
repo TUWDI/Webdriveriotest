@@ -17,8 +17,10 @@
     "chromedriver": "^91.0.1",
     "wdio-chromedriver-service": "^7.1.1"
   },
+
+
   "scripts": {
-    "test": "mocha"
+    "test": "mocha 'test/specs/*.js' --timeout 60000 --exit"
   },
   "keywords": [],
   "author": "",

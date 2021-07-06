@@ -286,15 +286,15 @@ exports.config = {
     //}
 }
 
-export const config = configToExport;
+// export const config = configToExport;
 
-if (process.env.CI == "true")
-{
-    console.log("RUN IN CI MODE")
-    configToExport.logLevel = "error";
-    configToExport.services = configToExport.services.filter(
-        (services) => services !== "chromedriver"
-    );
-    configToExport.hostname= "localhost";
-    configToExport.path = "/wd/hub";
-}
+// if (process.env.CI == "true")
+// {
+//     console.log("RUN IN CI MODE")
+//     configToExport.logLevel = "error";
+//     configToExport.services = configToExport.services.filter(
+//         (services) => services !== "chromedriver"
+//     );
+//     configToExport.hostname= "localhost";
+//     configToExport.path = "/wd/hub";
+// }
