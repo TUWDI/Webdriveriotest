@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "(//h3[@class=\"float-left f3-mktg text-normal py-4\"])[8]"
-}

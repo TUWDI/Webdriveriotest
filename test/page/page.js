@@ -1,13 +1,14 @@
-module.exports = class Page {
-    /**
-    * Opens a sub page of the page
-    * @param path path of the sub page (e.g. /path/to/page.html)
-    */
-    open (path) {
+class Page {
 
-        return browser.url(path);
-        
-    }
+getElement (element){
+    return  $(element);
+  }
+  
+  async setValue (selector, value)
+  {
+    await (await this.getElement(selector)).setValue(value);
+  }
 
-   
 }
+
+module.exports = new Page();

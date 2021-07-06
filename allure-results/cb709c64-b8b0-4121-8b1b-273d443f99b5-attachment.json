@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//div [@class=\"height-full mx-2 rounded-2 signup-plan-card color-gray-9 mb-sm-4  pb-2\"][1]"
-}

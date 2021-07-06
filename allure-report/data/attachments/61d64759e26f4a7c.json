@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\"Signed in as \")]\"}\n  (Session info: chrome=91.0.4472.124)",
-  "stacktrace": "Backtrace:\n\tOrdinal0 [0x005B3733+2504499]\n\tOrdinal0 [0x0054C401+2081793]\n\tOrdinal0 [0x00452628+1058344]\n\tOrdinal0 [0x0047CEBB+1232571]\n\tOrdinal0 [0x004A68F2+1403122]\n\tOrdinal0 [0x00495EBA+1334970]\n\tOrdinal0 [0x004A4CDB+1395931]\n\tOrdinal0 [0x00495D4B+1334603]\n\tOrdinal0 [0x004722B4+1188532]\n\tOrdinal0 [0x00473149+1192265]\n\tGetHandleVerifier [0x0072FB8C+1512252]\n\tGetHandleVerifier [0x007DB0DF+2214031]\n\tGetHandleVerifier [0x00634BC3+484211]\n\tGetHandleVerifier [0x00633E69+480793]\n\tOrdinal0 [0x0055218D+2105741]\n\tOrdinal0 [0x005566E8+2123496]\n\tOrdinal0 [0x00556827+2123815]\n\tOrdinal0 [0x0055FB73+2161523]\n\tBaseThreadInitThunk [0x75E0FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77C27A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77C27A6E+238]\n"
-}
