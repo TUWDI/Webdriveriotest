@@ -1,29 +1,15 @@
+name: Run test
 
-name: Node.js CI
+on: [push]
 
-on:
-  push:
-    branches: [ main ]
-  
 jobs:
-  test:
-      runs-on: ubuntu-20.04
-      steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12'
-      - run: npm ci
-#      - run: npm config set script-shell "C:\Program Files\Git\bin\bash.exe"
-      - name: Run tests as test:chrome:headless:stage:ta
-        run: npm run test:chrome:headless:stage:ta || npm run test:chrome:headless:stage:ta
-      - name: Generate allure-report
-        if: always()
-        run: npm run allure:generate
-      - name: Publishing Allure artifact to Github Actions
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: allure-report-ta
-          path: allure-report
- 
+  tests:
+    runs-on: ubuntu-latest
+    name: Run WDIO tests
+    steps:
+    - name: Start selenoid
+      uses: Xotabu4/selenoid-github-action@v1
+    - uses: actions/checkout@v1
+    - run: npm ci  
+    - name: Run tests
+      run: npm test
