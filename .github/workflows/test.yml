@@ -8,7 +8,7 @@ jobs:
 
   steps:
     - name: start selenoid
-      uses: TUWDI/Webdriveriotest@v1
+      uses: Xotabu4/selenoid-github-action@v1
     with:
       selenoid-start-arguments: 
         --args "-timeout 60s"
