@@ -1,4 +1,4 @@
-const page  = require('../page/Page.js')
+const page  = require('../page/page.js')
 
 
 const continueBtn = '[data-optimizely-event="click.signup_continue.email"]' 
