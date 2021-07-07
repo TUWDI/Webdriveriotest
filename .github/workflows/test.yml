@@ -11,6 +11,11 @@ jobs:
 
     runs-on: windows-2019
 
+    strategy:
+      matrix:
+        node-version: [14.17]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
   name: Run WDIO tests
     steps:
     - name: Start selenoid
@@ -19,3 +24,5 @@ jobs:
     - run: npm ci  
     - name: Run tests
       run: npm test
+
+    
