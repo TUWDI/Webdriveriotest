@@ -1,22 +1,9 @@
-name: Node.js CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
 jobs:
-  build:
-
+  tests:
     runs-on: windows-2019
-
-    strategy:
-      matrix:
-        node-version: [14.17]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-  name: Run WDIO tests
+    name: Run WDIO tests
     steps:
     - name: Start selenoid
       uses: Xotabu4/selenoid-github-action@v1
@@ -24,5 +11,3 @@ jobs:
     - run: npm ci  
     - name: Run tests
       run: npm test
-
-    
