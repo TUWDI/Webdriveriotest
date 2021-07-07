@@ -1,21 +1,28 @@
-name: Run UI tests
+name: Node.js CI
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  run-ui-tests:
+  build:
+
     runs-on: ubuntu-latest
-    
+
+    strategy:
+      matrix:
+        node-version: [14.17]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-    - name: Start selenoid
-      uses: Xotabu4/selenoid-github-action@v2
-      with: 
-        selenoid-start-arguments: |
-          --args "-timeout 60s"
     - uses: actions/checkout@v2
-    - name: Switch to Node.js 14.17.0
-      uses: actions/setup-node@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
       with:
-        node-version: 14.17.0
-    - name: Run tests
-      run: npm cit
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
