@@ -23,8 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    name: zaleatfasgf
     - run: npm ci
-     run: npm test
-    - name: Create report
-     if: always()
-    - run: allure generate allure-results/ --clean | allure open
+    - run: npm test
+    
