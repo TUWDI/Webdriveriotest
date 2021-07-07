@@ -24,6 +24,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm cit
-    - name: Create Report
-    - uses: actions/upload-artifact@v1
-    
+    - run: npm run build --if-present
+    - run: npm test
+      run: |
+          allure generate output/
+      - name:  Publishing Allure artifact to GitHub Actions
+        uses: actions/upload-artifact@v2
+        with:
+          name: allure-report
+          path: allure-report
