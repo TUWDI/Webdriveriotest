@@ -1,11 +1,11 @@
-  name: Node.js CI
-  
+  name: Node
+
 on:
   push:
     branches: [ main ]
 
-jobs: 
-  runs-on: windows-2019
+jobs:
+      runs-on: ubuntu-20.04
       steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -13,8 +13,8 @@ jobs:
           node-version: '14.17'
       - run: npm ci
 #      - run: npm config set script-shell "C:\Program Files\Git\bin\bash.exe"
-      - name: Run tests as test:chrome:headless:stage:ta
-        run: npm run test:chrome:headless:stage:ta || npm run test:chrome:headless:stage:ta
+      - name: Run tests
+        run: npm run test
       - name: Generate allure-report
         if: always()
         run: npm run allure:generate
