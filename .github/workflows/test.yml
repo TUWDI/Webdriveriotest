@@ -26,10 +26,5 @@ jobs:
     - run: npm cit
     - run: npm run build --if-present
     - run: npm test
-      run: |
-          allure generate output/
-      - name:  Publishing Allure artifact to GitHub Actions
-        uses: actions/upload-artifact@v2
-        with:
-          name: allure-report
-          path: allure-report
+     - name: Allure Report with history
+  uses: simple-elf/allure-report-action@v1.5
