@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "allure-commandline": "^2.13.8"
+  },
   "devDependencies": {
     "@wdio/allure-reporter": "^7.7.3",
     "@wdio/cli": "^7.7.4",
@@ -16,6 +18,7 @@
     "@wdio/sync": "^7.7.4",
     "chromedriver": "^91.0.1",
     "mocha-chrome": "^2.2.0",
+    "wdio-allure-reporter": "^0.8.3",
     "wdio-chromedriver-service": "^7.1.1"
   },
   "scripts": {
