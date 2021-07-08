@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node
 
 on:
   push:
@@ -7,13 +7,10 @@ on:
     branches: [ main ]
 
 jobs:
-  e2e-test-on-ubuntu-with-local-chrome:
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: windows-2019
     steps:
-    - name: Install ChromeDriver
     - uses: actions/checkout@v2  
-    - name: setup-chromedriver
-      uses: nanasess/setup-chromedriver@v1.0.1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
@@ -22,9 +19,5 @@ jobs:
     
     - run: npm ci
     - run: npm test
-      if: always()
-    - name: Allure report V2
-      uses: QuintilianoNery/action-allure-report-V2@0.2.0
-
-
+    - run: allure generate allure-results/ --clean | allure open
     
