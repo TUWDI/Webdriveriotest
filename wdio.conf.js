@@ -64,6 +64,9 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: "chrome",
+            'goog:chromeOptions': {
+                args: ['--headless', '--start-maximized', '--no-sandbox', '--disable-gpu', '--window-size=1280,800', '--allow-insecure-localhost']
+            },
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
@@ -118,11 +121,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: [
-        ['chromedriver', {
-            logFileName: 'wdio-chromedriver.log', // default
-            outputDir: 'driver-logs', // overwrites the config.outputDir
-            args: ['--no-sandbox'],
-        }]
+        ['chromedriver']
     ],
 
     // Framework you want to run your specs with.
