@@ -19,5 +19,4 @@ jobs:
     
     - run: npm ci
     - run: npm test
-    - run: allure generate allure-results/ --clean | allure open
     
