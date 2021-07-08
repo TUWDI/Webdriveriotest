@@ -13,7 +13,7 @@ describe ('test', () => {
         await mainRegisterPage.setEmail();
         await browser.pause(2000)
         
-      
+       
          
      })
  
