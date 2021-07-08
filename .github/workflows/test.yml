@@ -19,4 +19,5 @@ jobs:
     
     - run: npm ci
     - run: npm run test
-    
+    - name: Allure report V2
+      uses: QuintilianoNery/action-allure-report-V2@0.2.0
