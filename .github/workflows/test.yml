@@ -1,27 +1,17 @@
-name: Node.js CI
+name: Multiple Environments Example
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
-  build:
+  e2e-test-on-ubuntu-with-local-chrome:
     runs-on: ubuntu-latest
+    #runs-on: macos-latest
+    #runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2  
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    - run: npm ci
-    - run: npm test
-    - name: Allure report V2
-      uses: QuintilianoNery/action-allure-report-V2@0.2.0
-
-
-
-    
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        run: npm install
+      - name: Test
+        run: npm run test
+       
