@@ -34,7 +34,7 @@ jobs:
       if: always()
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
+        BRANCH: maim
         FOLDER: docs/_build/
         CLEAN: false
         TARGET_FOLDER: latest
