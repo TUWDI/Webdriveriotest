@@ -1,7 +1,7 @@
 const page = require('../page/page.js')
 
 
-const emailInput = '[name="user[email]"]'
+const emailInput = '[id="search_input_react"]'
 const email = 'atgasf@gmail.com';
 
 

@@ -7,11 +7,11 @@ describe ('test', () => {
     
     it ('register from main page', async () =>{
 
-        await browser.url("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")
+        await browser.url("https://v5.webdriver.io/")
                
-        await browser.pause(2000)
+        await browser.pause(1000)
         await mainRegisterPage.setEmail();
-        await browser.pause(2000)
+        await browser.pause(1000)
         
      })
  
