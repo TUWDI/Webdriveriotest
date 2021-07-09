@@ -2,7 +2,7 @@ const page = require('../page/page.js')
 
 
 const emailInput = '[id="search_input_react"]'
-const email = 'atgasf@gmail.com';
+const email = 'atgas13f@gmail.com';
 
 
 class MainRegisterPage {
