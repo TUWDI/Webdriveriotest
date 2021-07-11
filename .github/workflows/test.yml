@@ -34,7 +34,7 @@ jobs:
       if: always()
       with:
         REPOSITORY_NAME: Kravch773/Kravch773.github.io
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ALLURE_SECRET }}
         BRANCH: gh-pages
         FOLDER: ./allure-report
         CLEAN: false
