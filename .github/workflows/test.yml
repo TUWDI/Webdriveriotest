@@ -33,9 +33,8 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.7.1
       if: always()
       with:
-        REPOSITORY_NAME: Kravch773/Kravch773.github.io
-        GITHUB_TOKEN: ${{ secrets.ALLURE_SECRET }}
-        BRANCH: gh-pages
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: main
         FOLDER: ./allure-report
         CLEAN: false
         TARGET_FOLDER: latest
