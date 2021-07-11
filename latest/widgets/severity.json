@@ -1,0 +1,11 @@
+[ {
+  "uid" : "6b5fd0af6b3fd461",
+  "name" : "register from main page",
+  "time" : {
+    "start" : 1625996710734,
+    "stop" : 1625996717162,
+    "duration" : 6428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
