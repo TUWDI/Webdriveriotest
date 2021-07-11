@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "register from main page",
+      "uid" : "6b5fd0af6b3fd461",
+      "parentUid" : "ff2b04dbb9c449a4d40723f51d841925",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625996710734,
+        "stop" : 1625996717162,
+        "duration" : 6428
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome-91.0.4472.114" ]
+    } ],
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925"
+  } ],
+  "name" : "suites"
+}
