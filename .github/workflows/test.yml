@@ -35,7 +35,7 @@ jobs:
       with:
         REPOSITORY_NAME: Kravch773/Kravch773.github.io
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: main
+        BRANCH: gh-pages
         FOLDER: ./allure-report
         CLEAN: false
         TARGET_FOLDER: latest
