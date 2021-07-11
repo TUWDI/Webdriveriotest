@@ -35,7 +35,7 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: main
-        FOLDER: /allure-report
+        FOLDER: ./allure-report
         CLEAN: false
         TARGET_FOLDER: latest
 
