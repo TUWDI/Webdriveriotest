@@ -35,7 +35,7 @@ jobs:
       with:
         REPOSITORY_NAME: TUWDI/TUWDI.github.io
         SSH: ${{ secrets.SSHPublic }}
-        BRANCH: gh-pages
+        BRANCH: main
         FOLDER: ./allure-report
         CLEAN: false
         TARGET_FOLDER: latest
