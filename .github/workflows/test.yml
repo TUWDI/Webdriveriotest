@@ -29,6 +29,9 @@ jobs:
       with:
         name: allure-report
         path: ./allure-report
+    - name: Commit files
+      run: |
+        git config --local --unset-all "http.https://github.com/.extraheader"  
     - name: Deploy report
       uses: JamesIves/github-pages-deploy-action@3.7.1
       if: always()
