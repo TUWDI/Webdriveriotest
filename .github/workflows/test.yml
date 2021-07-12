@@ -33,7 +33,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@3.7.1
       if: always()
       with:
-        REPOSITORY_NAME: git@github.com:Kravch773/Kravch773.github.io.git
+        REPOSITORY_NAME: Kravch773/Kravch773.github.io
         SSH: ${{ secrets.SSHPublic }}
         BRANCH: gh-pages
         FOLDER: ./allure-report
