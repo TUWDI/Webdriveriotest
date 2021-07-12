@@ -37,7 +37,7 @@ jobs:
       if: always()
       with:
         REPOSITORY_NAME: TUWDI/TUWDI.github.io
-        SSH: ${{ secrets.SSHPublic }}
+        SSH: ${{ secrets.SecretForAllure }}
         BRANCH: main
         FOLDER: ./allure-report
         CLEAN: false
