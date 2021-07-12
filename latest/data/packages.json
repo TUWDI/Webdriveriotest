@@ -4,13 +4,13 @@
     "name" : "test",
     "children" : [ {
       "name" : "register from main page",
-      "uid" : "26a8778518a66c18",
+      "uid" : "5d1e3da58d7940e1",
       "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
       "status" : "passed",
       "time" : {
-        "start" : 1626005528760,
-        "stop" : 1626005534709,
-        "duration" : 5949
+        "start" : 1626093051753,
+        "stop" : 1626093057168,
+        "duration" : 5415
       },
       "flaky" : false,
       "newFailed" : false,

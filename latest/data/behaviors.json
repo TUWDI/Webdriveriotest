@@ -2,13 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "register from main page",
-    "uid" : "26a8778518a66c18",
+    "uid" : "5d1e3da58d7940e1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1626005528760,
-      "stop" : 1626005534709,
-      "duration" : 5949
+      "start" : 1626093051753,
+      "stop" : 1626093057168,
+      "duration" : 5415
     },
     "flaky" : false,
     "newFailed" : false,
