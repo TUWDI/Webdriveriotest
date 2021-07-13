@@ -1,6 +1,5 @@
 const GuidePage = require('../page/Guide.page.js')
 const MainPage = require('../page/MainPage.js')
-const Page = require('../page/Page.js')
 
 
 describe ('test', () => {
