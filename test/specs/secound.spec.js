@@ -12,7 +12,7 @@ describe ('test2', () => {
         await browser.pause(1000)
         await MainPage.guideBtnClick();
         await browser.pause(1000)
-        await GuidePage.checkText("Some text");
+        await GuidePage.checkText();
         
              
      })
