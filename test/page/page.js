@@ -1,13 +1,24 @@
-module.exports = class Page {
-    /**
-    * Opens a sub page of the page
-    * @param path path of the sub page (e.g. /path/to/page.html)
-    */
-    open (path) {
+const defaultTimeout = 10000; // 10sec
 
-        return browser.url(path);
-        
+class Page {
+
+    async getElement(element) {
+        return await $(element);
     }
 
+    async setValue(element, value) {
+        await (await this.getElement(element)).setValue(value);
+    }
+    async click(element) {
+       
+       await (await this.getElement(element)).click();
+    }
+
+    async getElementText(element) {
+        
+         return await (await (await this.getElement(element)).getText());
+    }
    
+    
 }
+module.exports = new Page();
