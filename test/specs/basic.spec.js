@@ -7,11 +7,10 @@ describe ('test', () => {
 
 
     
-    xit ('register from main page', async () =>{
+    it ('register from main page', async () =>{
 
         await browser.url("https://v5.webdriver.io/")
               
-        await browser.pause(1000)
         await MainPage.serchTextEntering();
         await browser.pause(1000)
         
@@ -19,16 +18,16 @@ describe ('test', () => {
 
 
  
-    it ('check text', async () =>{
+    // it ('check text', async () =>{
 
-        await browser.url("https://v5.webdriver.io/")
+    //     await browser.url("https://v5.webdriver.io/")
               
-        await browser.pause(1000)
-        await MainPage.guideBtnClick();
-        await browser.pause(1000)
-        await GuidePage.checkText();
+    //     await browser.pause(1000)
+    //     await MainPage.guideBtnClick();
+    //     await browser.pause(1000)
+    //     await GuidePage.checkText();
            
-     })
+    //  })
  
 })
 
